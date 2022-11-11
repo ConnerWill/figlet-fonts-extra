@@ -11,8 +11,7 @@ inputtext="${*}"
 
 printf "\n\e[0;1;38;5;87m══════════ \e[0;1;38;5;201mPreview\e[0;1;38;5;93m(above) \e[0;1;38;5;87m| \e[0;1;38;5;201mName\e[0;1;38;5;93m(below) \e[0;1;38;5;87m══════════\e[0m\n\n"  && sleep 1
 
-for file in src/*.flf
-do
+for file in src/*.flf; do
   fontname=$(basename --suffix=.flf "${file}")
     ${toilet_path}    \
       --gay           \
